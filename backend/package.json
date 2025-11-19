@@ -8,7 +8,8 @@
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
     "init-db": "node src/scripts/initDatabase.js",
-    "seed": "node src/scripts/seedDatabase.js"
+    "seed": "node src/scripts/seedDatabase.js",
+    "import-php": "node scripts/importerCoursPhp.js"
   },
   "keywords": [
     "learning",
