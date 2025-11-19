@@ -13,6 +13,7 @@ import LessonPage from './pages/LessonPage';
 import QuizPage from './pages/QuizPage';
 import LLMAssistantPage from './pages/LLMAssistantPage';
 import ProfilePage from './pages/ProfilePage';
+import AdminPage from './pages/AdminPage';
 
 // Components
 import Navbar from './components/Navbar';
@@ -70,6 +71,14 @@ const AppContent = () => {
               element={
                 <ProtectedRoute>
                   <ProfilePage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute>
+                  <AdminPage />
                 </ProtectedRoute>
               }
             />

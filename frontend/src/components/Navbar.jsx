@@ -39,6 +39,7 @@ const Navbar = () => {
               <>
                 <Link to="/dashboard" className="navbar-link">Dashboard</Link>
                 <Link to="/assistant" className="navbar-link">Assistant IA</Link>
+                <Link to="/admin" className="navbar-link">Admin</Link>
               </>
             )}
           </div>
