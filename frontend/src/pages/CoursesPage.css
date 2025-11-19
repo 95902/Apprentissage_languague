@@ -1,0 +1,98 @@
+.courses-page {
+  padding: var(--spacing-2xl) 0;
+  min-height: 100vh;
+}
+
+.courses-filters {
+  display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.filter-btn.active {
+  background-color: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.course-card {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px var(--shadow);
+  border-color: var(--accent-primary);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.course-language {
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.course-level {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.level-beginner {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.level-intermediate {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: var(--warning);
+}
+
+.level-advanced {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: var(--error);
+}
+
+.course-footer {
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
